@@ -50,7 +50,7 @@ int main(){
 		}
 	}
 	else
-		cout << "Please make sure that the denominators are not eqaul to zero:" << endl;
+		cout << "Please make sure that the denominators are not eqaul to zero and choose the correct option:" << endl;
 
 	system("pause");
 	return 0;
