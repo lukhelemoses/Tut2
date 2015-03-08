@@ -54,8 +54,13 @@ void Fraction::print(){
 	if (n > d){
 		int i = n / d;
 		n = n % d;
-		cout << "The answer is:" << i << "and\n" << n << "/" << d << endl;
+		cout << "The answer is:" << i << "\nand\n" << n << "/" << d << endl;
 	}
-	else
+	else 
+		if (n == d){
+			
+			cout << "The answer is:\n" << d << endl;
+		}
+		else
 		cout << "The answer is " << n << "/" << d << endl;
 }
