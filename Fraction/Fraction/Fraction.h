@@ -15,7 +15,8 @@ public:
 	Fraction operator-(Fraction subtract);
 	Fraction operator/(Fraction divide);
 	Fraction operator*(Fraction multiply);
-
+	friend istream &operator>>(istream&, Fraction&);
+	friend ostream &operator<<(ostream&, const Fraction&);
 
 	~Fraction();
 
