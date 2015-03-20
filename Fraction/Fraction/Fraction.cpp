@@ -64,11 +64,13 @@ void Fraction::print(){
 		else
 		cout << "The answer is " << n << "/" << d << endl;
 }
-istream &operator>>(istream&is, Fraction &cFraction){
+istream &operator>>(istream &is, Fraction &myfraction1){
 
-
-
+	is >> myfraction1.setNumerator>> myfraction1.setDenominator;
+	return is;
 }
-ostream &operator< (ostream&os, Fraction &cFraction){
+ostream& operator<< (ostream&os, Fraction &cFraction){
 
+	cFraction.print();
+	return os;
 }
